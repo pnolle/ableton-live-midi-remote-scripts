@@ -4,6 +4,10 @@ Scripts for creating custom MIDI Remote Scripts for Ableton Live.
 Known to be working with Live 9 and 10. I've added a new directory for Live 11 which updates the code to Python 3.
 Untested in Live 12.
 
+## This branch: Behringer X-Touch Mini
+
+Only keeping the Live 11 compatible folder.
+
 ---
 ### Background
 This is an [in-depth tutorial](https://youtu.be/IgKwcCJsoz4) on how to use these scripts. 
