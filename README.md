@@ -6,7 +6,7 @@ Untested in Live 12.
 
 ## This branch: Behringer X-Touch Mini
 
-Only keeping the Live 11 compatible folder.
+Derived from the Live 11 compatible folder.
 
 ---
 ### Background
