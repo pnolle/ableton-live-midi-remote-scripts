@@ -15,6 +15,7 @@ from .SpecialTransportComponent import SpecialTransportComponent
 from .SpecialSessionComponent import SpecialSessionComponent
 from .SpecialZoomingComponent import SpecialZoomingComponent
 from .SpecialViewControllerComponent import DetailViewControllerComponent
+
 from .MIDI_Map import *
 
 
@@ -23,15 +24,15 @@ from .MIDI_Map import *
 # MIDI_PB_TYPE = 2
 
 
-class X-TOUCH_MINI(ControlSurface):   # Make sure you update the name
-    __doc__ = " Script for X-TOUCH_MINI in APC emulation mode "   # Make sure you update the name
+class X_TOUCH_MINI(ControlSurface):   # Make sure you update the name
+    __doc__ = " Script for X_TOUCH_MINI in APC emulation mode "   # Make sure you update the name
 
     _active_instances = []
 
     def _combine_active_instances():
         track_offset = 0
         scene_offset = 0
-        for instance in X-TOUCH_MINI._active_instances:   # Make sure you update the name
+        for instance in X_TOUCH_MINI._active_instances:   # Make sure you update the name
             instance._activate_combination_mode(track_offset, scene_offset)
             track_offset += instance._session.width()
     _combine_active_instances = staticmethod(_combine_active_instances)
@@ -68,14 +69,14 @@ class X-TOUCH_MINI(ControlSurface):   # Make sure you update the name
         ControlSurface.disconnect(self)
 
     def _do_combine(self):
-        if self not in X-TOUCH_MINI._active_instances:    # Make sure you update the name
-            X-TOUCH_MINI._active_instances.append(self)   # Make sure you update the name
-            X-TOUCH_MINI._combine_active_instances()  # Make sure you update the name
+        if self not in X_TOUCH_MINI._active_instances:    # Make sure you update the name
+            X_TOUCH_MINI._active_instances.append(self)   # Make sure you update the name
+            X_TOUCH_MINI._combine_active_instances()  # Make sure you update the name
 
     def _do_uncombine(self):
-        if (self in X-TOUCH_MINI._active_instances) and X-TOUCH_MINI._active_instances.remove(self):    # Make sure you update the name
+        if (self in X_TOUCH_MINI._active_instances) and X_TOUCH_MINI._active_instances.remove(self):    # Make sure you update the name
             self._session.unlink()
-            X-TOUCH_MINI._combine_active_instances()  # Make sure you update the name
+            X_TOUCH_MINI._combine_active_instances()  # Make sure you update the name
 
     def _activate_combination_mode(self, track_offset, scene_offset):
         if TRACK_OFFSET != -1:

@@ -51,7 +51,7 @@ to the code as I figure out what each function does.
   won't be able to make edits after it has done that. You've been warned. Don't let that effort be for nothing.
 
 MIDI Remote Scripts folder:
-  - For Windows users: `\ProgramData\Ableton\Live x.x\Resources\MIDI Remote Scripts\`
+  - For Windows users: `\ProgramData\Ableton\Live x.x\App-Resources\MIDI Remote Scripts\`
   - For macOS users:
     - Locate the Live application in Finder (typically `/Applications/`), 
     - right click on it and select "Show Package Contents" in the context menu,

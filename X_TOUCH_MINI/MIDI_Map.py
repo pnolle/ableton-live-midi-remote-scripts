@@ -13,7 +13,7 @@ SCENE_OFFSET = 0  # offset from the top of linked session origin (no auto-join)
 # Valid Note/CC assignments are 0 to 127, or -1 for NONE
 # Duplicate assignments are permitted
 
-BUTTONCHANNEL = 0  # Channel assignment for all mapped buttons/pads; valid range is 0 to 15 ; 0=1, 1=2 etc.
+BUTTONCHANNEL = 10  # X-Touch Mini sends on channel 11 => number is zero-based / Channel assignment for all mapped buttons/pads; valid range is 0 to 15 ; 0=1, 1=2 etc.
 MESSAGETYPE = 0  # Message type for buttons/pads; set to 0 for MIDI Notes, 1 for CCs.
 # When using CCs for buttons/pads, set BUTTONCHANNEL and SLIDERCHANNEL to different values.
 
@@ -23,8 +23,8 @@ TSB_X = 8   # Controls the horizontal value for the track selection box. Default
 TSB_Y = 8   # Controls the horizontal value for the track selection box. Default value is 8
 
 # General
-PLAY = -1   # Global play
-STOP = -1   # Global stop
+PLAY = 22   # Global play
+STOP = 21   # Global stop
 REC = -1    # Global record
 TAPTEMPO = -1   # Tap tempo
 NUDGEUP = -1    # Tempo Nudge Up
@@ -177,7 +177,7 @@ DRUM_PADS = (-1, -1, -1, -1,  # MIDI note numbers for 4 x 4 Drum Rack
 # ---------------
 # Valid CC assignments are 0 to 127, or -1 for NONE
 # Duplicate assignments will be ignored
-SLIDERCHANNEL = 0  # Channel assignment for all mapped CCs; valid range is 0 to 15
+SLIDERCHANNEL = 11  # Channel assignment for all mapped CCs; valid range is 0 to 15
 TEMPO_TOP = 180.0  # Upper limit of tempo control in BPM (max is 999)
 TEMPO_BOTTOM = 100.0  # Lower limit of tempo control in BPM (min is 0)
 
@@ -245,5 +245,3 @@ PARAMCONTROL = (-1,  # Param 1 #All 8 params must be assigned to positive values
                 -1,  # Param 7
                 -1,  # Param 8
                 )
-
-

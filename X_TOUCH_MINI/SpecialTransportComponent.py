@@ -1,5 +1,5 @@
 # There are lot of things to explore that you can use to add extra functionality to your scipt.
-# You'd essentially enable it here by uncommenting then add it X-TOUCH_MINI.py and MIDI_Map.
+# You'd essentially enable it here by uncommenting then add it X_TOUCH_MINI.py and MIDI_Map.
 # I experiment more and add myself in the future.
 
 import Live
